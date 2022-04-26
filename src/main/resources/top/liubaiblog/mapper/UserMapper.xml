@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace请填写mapper接口的全类名-->
+<mapper namespace="top.liubaiblog.mapper.UserMapper">
+
+    <!-- User selectById(@Param("id") long id); -->
+    <select id="selectById" resultType="user">
+        select * from user where id=#{id}
+    </select>
+
+</mapper>
